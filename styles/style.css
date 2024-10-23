@@ -162,11 +162,6 @@ nav {
     font-weight: 400;
 }
 
-.banner-img img {
-    width: 100%;
-    height: auto;
-}
-
 @media screen and (min-width:577px) and (max-width:992px) {
     .banner {
         flex-direction: column;
