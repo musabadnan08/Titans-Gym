@@ -90,16 +90,51 @@ header {
 
 }
 
-nav {
-    align-items: center;
-    justify-content: space-between;
-}
-
 nav h1 {
     color: rgb(230, 83, 60);
     font-size: 2rem;
     font-weight: 800;
     font-style: italic;
+}
+
+nav {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-item {
+    list-style: none;
+    margin-right: 2rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+#nav-link-home {
+    padding: .5rem 1.2rem .5rem 1.2rem;
+    border-radius: 3rem;
+    background: rgb(230, 83, 60);
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
 }
 
 /* nav section styles ends */
@@ -125,6 +160,11 @@ nav h1 {
     color: rgba(255, 255, 255, 0.5);
     font-size: 1rem;
     font-weight: 400;
+}
+
+.banner-img img {
+    width: 100%;
+    height: auto;
 }
 
 @media screen and (min-width:577px) and (max-width:992px) {
@@ -214,6 +254,14 @@ nav h1 {
     font-size: 1rem;
     font-weight: 400;
     text-align: left;
+}
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    .run-extra-mile-sec {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0.5rem;
+        gap: 1rem;
+    }
 }
 
 @media screen and (max-width:576px) {
