@@ -2,34 +2,82 @@
 
 .inter-font {
     font-family: "Inter", sans-serif;
-    /* font-optical-sizing: auto; */
-    font-weight: 400;
     font-style: normal;
 }
 
 
 /* shared styles starts */
-header,
-main,
-.footer-section {
-    width: 100%;
-    margin: 0 auto;
+body {
+    background-color: rgb(17, 17, 17);
 }
 
-main {
-    background: rgb(17, 17, 17);
+header,
+section {
+    margin-bottom: 7rem;
+}
+
+nav,
+.banner,
+.change-your-habits-sec,
+.run-extra-mile-sec,
+.meet-team-sec,
+.footer-section {
+    width: 80%;
+    margin: 0 auto;
 }
 
 .display-flex {
     display: flex;
 }
 
+.title {
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.sub-title {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.btn-primary {
+    background: rgb(230, 83, 60);
+    border: none;
+    border-radius: 2.5rem;
+    padding: 1rem 2.5rem 1rem 2.5rem;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.btn-secondary {
+    background: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 2.5rem;
+    padding: 1rem 2.5rem 1rem 2.5rem;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
 @media screen and (max-width:576px) {
 
-    header,
-    main {
+    nav,
+    .banner,
+    .change-your-habits-sec,
+    .run-extra-mile-sec,
+    .meet-team-sec,
+    .footer-section {
         width: 100%;
-        margin: 0 auto;
+        margin: 0;
     }
 }
 
@@ -38,7 +86,8 @@ main {
 
 /* nav section styles starts */
 header {
-    background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
+    background: linear-gradient(180.00deg, rgb(38, 36, 36), rgba(119, 119, 119, 0) 100%);
+
 }
 
 nav {
@@ -50,23 +99,47 @@ nav h1 {
     color: rgb(230, 83, 60);
     font-size: 2rem;
     font-weight: 800;
-}
-
-.banner-texts h1 {
-    color: rgb(255, 255, 255);
-    font-family: Inter;
-    font-size: 4.8rem;
-    font-weight: 900;
-}
-
-.nav-links ul {
-    /* justify-content: space-between; */
+    font-style: italic;
 }
 
 /* nav section styles ends */
 
 
 /* banner section styles starts */
+.banner {
+    justify-content: space-between;
+}
+
+.banner-texts {
+    max-width: 37rem;
+}
+
+.banner-texts h1 {
+    color: rgb(255, 255, 255);
+    font-size: 4.8rem;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+
+.banner-texts p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+@media screen and (min-width:577px) and (max-width:992px) {
+    .banner {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width:576px) {
+    .banner {
+        flex-direction: column;
+    }
+}
+
 /* banner section styles ends */
 
 
@@ -75,17 +148,33 @@ nav h1 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 3rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-}
-
-.habit-sec-card {
+    padding-left: 2rem;
+    padding-right: 2rem;
     text-align: center;
 }
 
 .habit-sec-card img {
     border-radius: 50%;
-    width: 100%;
+}
+
+.habit-sec-card h4 {
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.habit-sec-card p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+@media screen and (min-width:577px) and (max-width:992px) {
+    .habit-sec-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
 
 @media screen and (max-width:576px) {
@@ -103,11 +192,8 @@ nav h1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10rem;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    background-color: cadetblue;
+    padding: 3rem;
+    background-color: rgb(34, 34, 34);
     border-radius: 1rem;
 }
 
@@ -115,10 +201,24 @@ nav h1 {
     border-radius: 5%;
 }
 
+.run-ex-mi-title {
+    color: rgb(255, 255, 255);
+    font-size: 3.2rem;
+    font-weight: 900;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.run-ex-mi-sub-title {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left;
+}
+
 @media screen and (max-width:576px) {
     .run-extra-mile-sec {
         grid-template-columns: repeat(1, 1fr);
-        background-color: cadetblue;
         padding: 0.5rem;
         gap: 1rem;
     }
@@ -126,57 +226,203 @@ nav h1 {
 
 /* run an extra mile section styles ends */
 
-/* training and exercise section styles starts */
-/* training and exercise section styles ends */
 
 /* bmi calculator section styles starts */
-.bmi-calc-sec {
-    justify-content: space-around;
+.bmi-table-calc {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     padding: 3rem 7rem 3rem 7rem;
     gap: 1rem;
+    border-radius: 1rem;
+    background: rgb(34, 34, 34);
+
 }
 
-th,
-td {
-    border: 1px solid black;
-    text-align: left;
-    padding: 0.2rem;
-}
-
-.calculate-bmi form {
+form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
-@media screen and (max-width:576px) {
-    .bmi-calc-sec {
-        flex-direction: column;
+th,
+td {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: left;
+    padding: .5rem;
+}
+
+th {
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+td {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.bmi-table-calc h1 {
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.calculate-bmi p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.calculate-bmi input[type=number] {
+    padding: 0.8rem 1.1rem 0.8rem 1.1rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    color: rgb(255, 255, 255);
+    border: none;
+}
+
+.calculate-bmi select {
+    padding: 0.8rem 1.1rem 0.8rem 1.1rem;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 400;
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.4);
+}
+
+select option {
+    background-color: rgb(62, 66, 70);
+}
+
+@media screen and (min-width:577px) and (max-width:992px) {
+    .bmi-table-calc {
+        grid-template-columns: repeat(1, 1fr);
         padding: 0rem;
+        width: 100%;
     }
+
+    form {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:576px) {
+    .bmi-table-calc {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0rem;
+        width: 100%;
+    }
+
+    form {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+
 }
 
 /* bmi calculator section styles ends */
 
 
 /* meet our team section styles starts */
-.meet-team-sec-imgs {
+.meet-team {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
-    padding: 1.5rem;
-    background-color: cadetblue;
+    background: rgb(34, 34, 34);
+    min-height: 38rem;
+    padding: 1rem;
+    border-radius: 1rem;
 }
 
-.meet-team-sec-imgs img {
-    min-height: 20rem;
-    max-height: 1px;
-    border-radius: 2%;
+.meet-team h4 {
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.meet-team p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left;
+}
+
+#trainer1 {
+    background-image: linear-gradient(to bottom, rgba(11, 11, 11, 0.52), rgba(15, 15, 15, 0.73)), url(../images/trainer1.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5%;
+}
+
+#trainer2 {
+    background-image: linear-gradient(to bottom, rgba(11, 11, 11, 0.52), rgba(15, 15, 15, 0.73)), url(../images/trainer2.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5%;
+}
+
+#trainer3 {
+    background-image: linear-gradient(to bottom, rgba(11, 11, 11, 0.52), rgba(15, 15, 15, 0.73)), url(../images/trainer3.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5%;
+}
+
+#trainer4 {
+    background-image: linear-gradient(to bottom, rgba(11, 11, 11, 0.52), rgba(15, 15, 15, 0.73)), url(../images/trainer4.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5%;
+}
+
+#trainer5 {
+    background-image: linear-gradient(to bottom, rgba(11, 11, 11, 0.52), rgba(15, 15, 15, 0.73)), url(../images/trainer5.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5%;
+}
+
+#trainer6 {
+    background-image: linear-gradient(to bottom, rgba(11, 11, 11, 0.52), rgba(15, 15, 15, 0.73)), url(../images/trainer6.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5%;
+}
+
+@media screen and (min-width:577px) and (max-width:992px) {
+    .meet-team {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #trainer1,
+    #trainer2,
+    #trainer3,
+    #trainer4,
+    #trainer5,
+    #trainer6 {
+        min-height: 27rem;
+    }
 }
 
 @media screen and (max-width:576px) {
-    .meet-team-sec-imgs {
+    .meet-team {
         grid-template-columns: repeat(1, 1fr);
-        background-color: cadetblue;
+    }
+
+    #trainer1,
+    #trainer2,
+    #trainer3,
+    #trainer4,
+    #trainer5,
+    #trainer6 {
+        min-height: 27rem;
     }
 }
 
@@ -185,26 +431,86 @@ td {
 
 /* footer section styles starts */
 footer {
-    background-color: blanchedalmond;
+    background-color: rgb(34, 34, 34);
+    text-align: center;
 }
 
 .footer-texts {
-    gap: 5rem;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.first-div {
+    max-width: 27rem;
+    margin: 0;
+}
+
+.footer-texts h1 {
+    color: rgb(230, 83, 60);
+    font-size: 4rem;
+    font-weight: 800;
+    font-style: italic;
+    text-align: left;
+    margin: 0;
+}
+
+.footer-texts p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left;
+    font-style: italic;
+}
+
+.footer-texts h3 {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: left;
+}
+
+.footer-texts h5 {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-align: left;
+    margin: .5rem;
 }
 
 .second-div {
-    gap: 1rem;
+    gap: 7rem;
+    max-width: 32rem;
 }
 
-@media screen and (max-width:576px) {
-    footer {
-        text-align: left;
-    }
+.footer-section hr {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.footer-section small {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+@media screen and (min-width:577px) and (max-width:992px) {
 
     .footer-texts {
         flex-direction: column;
-        background-color: cadetblue;
-        justify-content: left;
+        align-items: left;
+    }
+}
+
+@media screen and (max-width:576px) {
+
+    .footer-texts {
+        flex-direction: column;
+    }
+
+    .second-div {
+        flex-direction: column;
+        gap: 0;
+        text-align: left;
     }
 }
 
