@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.inter-font {
+    font-family: "Inter", sans-serif;
+    /* font-optical-sizing: auto; */
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* shared styles starts */
+header,
+main,
+.footer-section {
+    width: 100%;
+    margin: 0 auto;
+}
+
+main {
+    background: rgb(17, 17, 17);
+}
+
+.display-flex {
+    display: flex;
+}
+
+@media screen and (max-width:576px) {
+
+    header,
+    main {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+/* shared styles ends */
+
+
+/* nav section styles starts */
+header {
+    background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
+}
+
+nav {
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav h1 {
+    color: rgb(230, 83, 60);
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.banner-texts h1 {
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 4.8rem;
+    font-weight: 900;
+}
+
+.nav-links ul {
+    /* justify-content: space-between; */
+}
+
+/* nav section styles ends */
+
+
+/* banner section styles starts */
+/* banner section styles ends */
+
+
+/* change your habits section styles starts */
+.habit-sec-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.habit-sec-card {
+    text-align: center;
+}
+
+.habit-sec-card img {
+    border-radius: 50%;
+    width: 100%;
+}
+
+@media screen and (max-width:576px) {
+    .habit-sec-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+/* change your habits section styles ends */
+
+
+/* run an extra mile section styles starts */
+.run-extra-mile-sec {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    background-color: cadetblue;
+    border-radius: 1rem;
+}
+
+.run-extra-mile-sec-img img {
+    border-radius: 5%;
+}
+
+@media screen and (max-width:576px) {
+    .run-extra-mile-sec {
+        grid-template-columns: repeat(1, 1fr);
+        background-color: cadetblue;
+        padding: 0.5rem;
+        gap: 1rem;
+    }
+}
+
+/* run an extra mile section styles ends */
+
+/* training and exercise section styles starts */
+/* training and exercise section styles ends */
+
+/* bmi calculator section styles starts */
+.bmi-calc-sec {
+    justify-content: space-around;
+    padding: 3rem 7rem 3rem 7rem;
+    gap: 1rem;
+}
+
+th,
+td {
+    border: 1px solid black;
+    text-align: left;
+    padding: 0.2rem;
+}
+
+.calculate-bmi form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media screen and (max-width:576px) {
+    .bmi-calc-sec {
+        flex-direction: column;
+        padding: 0rem;
+    }
+}
+
+/* bmi calculator section styles ends */
+
+
+/* meet our team section styles starts */
+.meet-team-sec-imgs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1.5rem;
+    background-color: cadetblue;
+}
+
+.meet-team-sec-imgs img {
+    min-height: 20rem;
+    max-height: 1px;
+    border-radius: 2%;
+}
+
+@media screen and (max-width:576px) {
+    .meet-team-sec-imgs {
+        grid-template-columns: repeat(1, 1fr);
+        background-color: cadetblue;
+    }
+}
+
+/* meet our team section styles ends */
+
+
+/* footer section styles starts */
+footer {
+    background-color: blanchedalmond;
+}
+
+.footer-texts {
+    gap: 5rem;
+}
+
+.second-div {
+    gap: 1rem;
+}
+
+@media screen and (max-width:576px) {
+    footer {
+        text-align: left;
+    }
+
+    .footer-texts {
+        flex-direction: column;
+        background-color: cadetblue;
+        justify-content: left;
+    }
+}
+
+/* footer section styles ends */
