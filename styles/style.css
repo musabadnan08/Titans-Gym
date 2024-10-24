@@ -156,6 +156,7 @@ nav {
 
 
 /* banner section styles starts */
+
 .banner {
     justify-content: space-between;
 }
@@ -268,6 +269,7 @@ nav {
 
 
 /* change your habits section styles starts */
+
 .habit-sec-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -312,6 +314,7 @@ nav {
 
 
 /* run an extra mile section styles starts */
+
 .run-extra-mile-sec {
     align-items: center;
     gap: 10rem;
@@ -365,6 +368,7 @@ nav {
 /* run an extra mile section styles ends */
 
 /* Registration for course section styles starts */
+
 .course-reg-sec {
     margin: 0 auto;
     border-radius: 1rem;
@@ -459,6 +463,7 @@ select {
 /* Registration for course section styles ends */
 
 /* bmi calculator section styles starts */
+
 .bmi-table-calc {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -568,6 +573,7 @@ select option {
 
 
 /* meet our team section styles starts */
+
 .meet-team {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -669,6 +675,7 @@ select option {
 
 
 /* footer section styles starts */
+
 footer {
     background-color: rgb(34, 34, 34);
     text-align: center;
