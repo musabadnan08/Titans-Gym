@@ -275,7 +275,6 @@ nav {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 3rem 7rem 3rem 7rem;
-    gap: 1rem;
     border-radius: 1rem;
     background: rgb(34, 34, 34);
 
@@ -284,6 +283,11 @@ nav {
 form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: .5rem;
+}
+
+#item-1 {
+    grid-column: span 2;
 }
 
 th,
@@ -324,6 +328,7 @@ td {
     background: rgba(255, 255, 255, 0.1);
     color: rgb(255, 255, 255);
     border: none;
+    border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .calculate-bmi select {
@@ -334,6 +339,7 @@ td {
     font-weight: 400;
     background: rgba(255, 255, 255, 0.1);
     color: rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 select option {
@@ -351,7 +357,6 @@ select option {
         grid-template-columns: repeat(1, 1fr);
         width: 100%;
     }
-
 }
 
 @media screen and (max-width:576px) {
@@ -366,6 +371,9 @@ select option {
         width: 100%;
     }
 
+    #item-1 {
+        grid-column: span 1;
+    }
 }
 
 /* bmi calculator section styles ends */
@@ -476,6 +484,7 @@ select option {
 footer {
     background-color: rgb(34, 34, 34);
     text-align: center;
+    padding-bottom: 3rem;
 }
 
 .footer-texts {
@@ -528,12 +537,14 @@ footer {
 
 .footer-section hr {
     border: 1px solid rgba(255, 255, 255, 0.5);
+    margin-top: 3rem;
 }
 
-.footer-section small {
+footer .small {
     color: rgba(255, 255, 255, 0.5);
     font-size: 1rem;
     font-weight: 400;
+    margin-top: 3rem;
 }
 
 @media screen and (min-width:577px) and (max-width:992px) {
@@ -548,6 +559,7 @@ footer {
 
     .footer-texts {
         flex-direction: column;
+        align-items: start;
     }
 
     .second-div {
