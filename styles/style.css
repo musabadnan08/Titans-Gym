@@ -77,7 +77,7 @@ nav,
     .meet-team-sec,
     .footer-section {
         width: 100%;
-        margin: 0;
+        margin: 0 auto;
     }
 }
 
@@ -162,6 +162,70 @@ nav {
     font-weight: 400;
 }
 
+.banner-img {
+    position: relative;
+    width: 100%;
+    max-width: 20rem;
+    margin: 0 auto;
+}
+
+.badge {
+    position: absolute;
+    top: 9rem;
+    left: 15.5rem;
+    z-index: 10;
+    margin: 0;
+    min-width: 6rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: .5rem;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: .5rem 1rem;
+}
+
+.badge small {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.ellipse {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: rgb(230, 83, 60);
+}
+
+.badge2 {
+    align-items: center;
+    gap: .5rem;
+    position: absolute;
+    bottom: 6.25rem;
+    right: 15.5rem;
+    z-index: 10;
+    margin: 0;
+    min-width: 9rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: .5rem;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: .5rem .5rem;
+}
+
+.badge2 small {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+}
+
 @media screen and (min-width:577px) and (max-width:992px) {
     .banner {
         flex-direction: column;
@@ -172,6 +236,16 @@ nav {
 @media screen and (max-width:576px) {
     .banner {
         flex-direction: column;
+    }
+
+    .badge {
+        top: 11rem;
+        left: 12rem;
+    }
+
+    .badge2 {
+        bottom: 7.25rem;
+        right: 10.5rem;
     }
 }
 
@@ -251,7 +325,7 @@ nav {
     text-align: left;
 }
 
-@media screen and (min-width:576px) and (max-width:992px) {
+@media screen and (min-width:577px) and (max-width:992px) {
     .run-extra-mile-sec {
         grid-template-columns: repeat(1, 1fr);
         padding: 0.5rem;
