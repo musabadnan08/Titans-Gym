@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+
+.italianno-regular {
+    font-family: "Italianno", cursive;
+    font-weight: 900;
+    font-size: 5rem;
+    font-style: normal;
+}
 
 .inter-font {
     font-family: "Inter", sans-serif;
@@ -21,6 +29,7 @@ nav,
 .change-your-habits-sec,
 .run-extra-mile-sec,
 .meet-team-sec,
+.course-reg-sec,
 .footer-section {
     width: 80%;
     margin: 0 auto;
@@ -55,6 +64,7 @@ nav,
     font-size: 1rem;
     font-weight: 600;
     text-align: center;
+    cursor: pointer;
 }
 
 .btn-secondary {
@@ -66,6 +76,7 @@ nav,
     font-size: 1rem;
     font-weight: 600;
     text-align: center;
+    cursor: pointer;
 }
 
 @media screen and (max-width:576px) {
@@ -78,6 +89,10 @@ nav,
     .footer-section {
         width: 100%;
         margin: 0 auto;
+    }
+
+    .btn-primary {
+        margin-bottom: 1rem;
     }
 }
 
@@ -298,12 +313,18 @@ nav {
 
 /* run an extra mile section styles starts */
 .run-extra-mile-sec {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
     gap: 10rem;
     padding: 3rem;
     background-color: rgb(34, 34, 34);
     border-radius: 1rem;
+}
+
+.run-extra-mile-sec-img {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+
 }
 
 .run-extra-mile-sec-img img {
@@ -327,7 +348,7 @@ nav {
 
 @media screen and (min-width:577px) and (max-width:992px) {
     .run-extra-mile-sec {
-        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
         padding: 0.5rem;
         gap: 1rem;
     }
@@ -335,7 +356,7 @@ nav {
 
 @media screen and (max-width:576px) {
     .run-extra-mile-sec {
-        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
         padding: 0.5rem;
         gap: 1rem;
     }
@@ -343,6 +364,99 @@ nav {
 
 /* run an extra mile section styles ends */
 
+/* Registration for course section styles starts */
+.course-reg-sec {
+    margin: 0 auto;
+    border-radius: 1rem;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.course-reg-sec>h1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.course-reg-sec>p {
+    color: rgba(255, 255, 255, 0.65);
+    text-align: center;
+}
+
+.course-img-container img {
+    width: 100%;
+}
+
+.course-reg-container {
+    justify-content: center;
+}
+
+.course-img-container {
+    min-width: 20rem;
+    max-width: 25rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.course-reg-form {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1.2rem;
+    min-width: 20rem;
+    max-width: 25rem;
+    color: rgb(255, 255, 255);
+}
+
+.course-reg-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.course-reg-form label {
+    font-weight: 600;
+}
+
+.course-reg-form input,
+select {
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+
+}
+
+.course-reg-form button {
+    background-color: rgb(230, 83, 60);
+    color: aliceblue;
+    padding: .8rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+
+@media screen and (max-width:576px) {
+    .course-reg-container {
+        flex-direction: column;
+    }
+
+    .course-img-container {
+        grid-template-columns: repeat(2, 1fr);
+        min-width: 3rem;
+    }
+
+    .course-reg-form {
+        min-width: 3rem;
+    }
+
+}
+
+/* Registration for course section styles ends */
 
 /* bmi calculator section styles starts */
 .bmi-table-calc {
